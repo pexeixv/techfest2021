@@ -51,6 +51,7 @@ span.anchor {
 }
 
 .header {
+  z-index: 3;
   background: white;
   position: -webkit-sticky;
   position: sticky;
@@ -76,18 +77,48 @@ span.anchor {
   height: 40px;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav-link {
   text-transform: uppercase;
-  margin: 0 0.3em;
+  margin: 0 0.5em;
   font-size: 0.9rem;
-  -webkit-transform: all 300ms ease-out;
-          transform: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
   font-weight: 700;
   color: #4E2F00;
 }
 
+.nav-link::after {
+  display: block;
+  content: '';
+  background: #FFBA52;
+  width: 0;
+  height: 3px;
+  border-radius: 500px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.nav-link.current::after {
+  width: 100%;
+  -webkit-transition: all 300ms ease-out 200ms;
+  transition: all 300ms ease-out 200ms;
+}
+
 .nav-link:hover {
   color: #FFBA52;
+}
+
+@font-face {
+  font-family: 'theFontThatIsUsedForAllSubmissions';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Times New Roman"), url("../font/times.ttf") format("truetype");
 }
 
 .main {
@@ -117,7 +148,7 @@ span.anchor {
 }
 
 .main-title {
-  font-family: 'Times New Roman', serif;
+  font-family: 'theFontThatIsUsedForAllSubmissions', serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 5rem;
@@ -296,15 +327,15 @@ span.anchor {
   background: #CF943B;
   text-align: center;
   overflow: hidden;
-  height: 0px;
+  max-height: 0px;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
 
 .module-details.show {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  max-height: 200px;
 }
 
 .module-desc {

@@ -1,4 +1,5 @@
 .header
+    z-index: 3
     background: white
     position: sticky
     top: 0
@@ -12,13 +13,26 @@
 
     &-logo
         height: 40px
-.nav    
+.nav
+    display: flex   
     &-link
         text-transform: uppercase
-        margin: 0 0.3em
+        margin: 0 0.5em
         font-size: 0.9rem
-        transform: $trans 
+        transition: $trans
         font-weight: 700
         color: $text
+        &::after
+            display: block
+            content: ''
+            background: $pri
+            width: 0
+            height: 3px
+            border-radius: 500px
+            transition: $trans
+        &.current::after
+            width: 100%
+            transition: $trans 200ms
+            
         &:hover
             color: $pri

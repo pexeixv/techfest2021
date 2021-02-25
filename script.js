@@ -1,12 +1,33 @@
+
+
+let links = document.querySelectorAll('.nav-link');
+let anchors = document.querySelectorAll('.anchor');
+let anchorsTop = [];
+anchors.forEach(anchor => {
+    anchorsTop.push(anchor.offsetTop);
+})
+
+function findWhich(scr) {
+    for (i = 0; i < anchors.length; i++)
+        if (anchorsTop[i] <= scr && scr < anchorsTop[i + 1])
+            return i;
+    return anchors.length - 1
+}
+
 // Header gets shadow on scroll
-
 window.addEventListener('scroll', () => {
-    let scroll = this.scrollY;
+    let scroll = this.scrollY + 70;
     let header = document.querySelector('header');
-
     if (scroll >= 50)
         header.style.boxShadow = '0 2px 10px 5px rgba(0,0,0,0.2)';
     else header.style.boxShadow = 'none';
+
+    let n = findWhich(scroll);
+    links[n].classList.add('current');
+    for (i = 0; i < anchors.length; i++)
+        if (i != n)
+            links[i].classList.remove('current');
+
 })
 
 

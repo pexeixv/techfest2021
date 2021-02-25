@@ -38,9 +38,10 @@
         background: $dark
         text-align: center
         overflow: hidden
-        height: 0px
+        max-height: 0px
         transition: $trans
         &.show
-            height: max-content
+            transition: $trans
+            max-height: 200px
     &-desc
         padding: 1.5em 2em
