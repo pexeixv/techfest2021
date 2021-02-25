@@ -520,8 +520,8 @@ br.divider {
 }
 
 .upArrow {
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out 2s;
+  transition: all 500ms ease-out 2s;
   background: #1F1200;
   -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
