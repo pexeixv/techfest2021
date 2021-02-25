@@ -1,0 +1,46 @@
+.modules
+    background: $pri
+    height: max-content
+    &-container
+        min-height: calc( 100vh - 70px )
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 1em 1em 2em
+        justify-content: flex-start
+    &-grid
+        justify-content: center
+        display: flex
+        flex-direction: column
+    &-title
+        margin: 0.5em 0
+
+.module
+    margin: 0.5em
+    min-width: 400px
+    &-summary
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background: white
+        padding: 1em 2em
+        cursor: pointer
+        i
+            position: relative
+            bottom: 5px
+            transition: $trans
+            &.rotate
+                transform: rotate(180deg)
+                bottom: -3px
+    &-title
+        text-transform: uppercase
+    &-details
+        background: $dark
+        text-align: center
+        overflow: hidden
+        height: 0px
+        transition: $trans
+        &.show
+            height: max-content
+    &-desc
+        padding: 1.5em 2em

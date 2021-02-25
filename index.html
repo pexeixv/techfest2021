@@ -18,17 +18,18 @@
             <a href="#home"><img src="img/CtrlSave.png" alt="CtrlSave logo" class="header-logo"></a>
             <nav class="nav">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#home" class="nav-link">Features</a>
-                <a href="#home" class="nav-link">Modules</a>
-                <a href="#home" class="nav-link">Add-ons</a>
-                <a href="#home" class="nav-link">Pricing</a>
-                <a href="#home" class="nav-link">Contact</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#modules" class="nav-link">Modules</a>
+                <a href="#addons" class="nav-link">Add-ons</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
 
+    <span id="home" class="anchor"></span>
 
-    <main class="main" id="home">
+    <main class="main">
         <div class="main-container container">
             <div class="main-text">
                 <h1 class="main-title">Ferrosys</h1>
@@ -42,11 +43,12 @@
         </div>
     </main>
 
+    <span id="features" class="anchor"></span>
 
-    <section class="features" id="features">
+    <section class="features">
         <div class="features-container container">
-            <h2 class="features-title title">Why choose us?</h2>
-            <p class="features-desc">All data stored on locally with web back up, Export reports in CSV/PDF, 24/7
+            <h2 class="features-title title">Why choose Ferrosys?</h2>
+            <p class="features-desc">All data is stored locally with web back up, Export reports in CSV/PDF, 24/7
                 Support, Customisable reporting systems, Hands-on training during deployment, Worldwide app access</p>
             <div class="features-grid">
                 <div class="feature">
@@ -55,7 +57,7 @@
                     </div>
                     <div class="feature-text">
                         <h4 class="feature-title">Manage</h4>
-                        <p class="feature-desc">Manage raw material with ease.</p>
+                        <p class="feature-desc">Manage raw material quick and easily.</p>
                     </div>
                 </div>
                 <div class="feature">
@@ -83,16 +85,16 @@
 
     </section>
 
+    <span id="modules" class="anchor"></span>
 
 
-
-    <section class="modules" id="modules">
+    <section class="modules">
         <div class="modules-container container">
             <h2 class="modules-title  title">Modules</h2>
             <div class="modules-grid">
 
                 <div class="module">
-                    <div class="module-summary">
+                    <div class="module-summary" onclick="module(0)">
                         <h3 class="module-title">Production</h3>
                         <i class="fas fa-sort-down"></i>
                     </div>
@@ -104,7 +106,7 @@
                 </div>
 
                 <div class="module">
-                    <div class="module-summary">
+                    <div class="module-summary" onclick="module(1)">
                         <h3 class="module-title">Sales</h3>
                         <i class="fas fa-sort-down"></i>
                     </div>
@@ -116,7 +118,7 @@
                 </div>
 
                 <div class="module">
-                    <div class="module-summary">
+                    <div class="module-summary" onclick="module(2)">
                         <h3 class="module-title">Stocks</h3>
                         <i class="fas fa-sort-down"></i>
                     </div>
@@ -128,7 +130,7 @@
                 </div>
 
                 <div class="module">
-                    <div class="module-summary">
+                    <div class="module-summary" onclick="module(3)">
                         <h3 class="module-title">Maintenance</h3>
                         <i class="fas fa-sort-down"></i>
                     </div>
@@ -144,8 +146,9 @@
         </div>
     </section>
 
+    <span id="addons" class="anchor"></span>
 
-    <section class="features" id="addons">
+    <section class="features">
         <div class="features-container container">
             <h2 class="features-title  title">Add-ons</h2>
             <div class="features-grid">
@@ -162,7 +165,7 @@
 
                 <div class="feature">
                     <div class="feature-icon">
-                        <i class="fas fa-stopwatch"></i>
+                        <i class="fas fa-truck"></i>
                     </div>
                     <div class="feature-text">
                         <h4 class="feature-title">Logistic reports</h4>
@@ -172,7 +175,7 @@
 
                 <div class="feature">
                     <div class="feature-icon">
-                        <i class="fas fa-money-check-alt"></i>
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="feature-text">
                         <h4 class="feature-title">Customer acess</h4>
@@ -187,7 +190,9 @@
     </section>
 
 
-    <section class="pricing" id="pricing">
+    <span id="pricing" class="anchor"></span>
+
+    <section class="pricing">
         <div class="pricing-container container">
             <h2 class="pricing-title  title">Pricing</h2>
             <div class="pricing-grid">
@@ -229,7 +234,9 @@
     </section>
 
 
-    <section class="contacts" id="contacts">
+    <span id="contact" class="anchor"></span>
+
+    <section class="contacts">
         <div class="contacts-container container">
             <h2 class="contacts-title  title">Get in touch</h2>
             <div class="contacts-grid">
@@ -258,6 +265,9 @@
     </section>
 
 
+
+
+    <script src="script.js"></script>
 
 </body>
 
