@@ -50,6 +50,15 @@ span.anchor {
   bottom: 70px;
 }
 
+br.divider {
+  margin: 0.5em 0;
+  content: '';
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: #494949;
+}
+
 .header {
   z-index: 3;
   background: white;
@@ -341,5 +350,86 @@ span.anchor {
 
 .module-desc {
   padding: 1.5em 2em;
+}
+
+.pricing {
+  background: #FFBA52;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1em 0 3em;
+}
+
+.pricing-container {
+  min-height: calc( 100vh - 70px);
+}
+
+.pricing-title {
+  margin: 0.5em 0 1em;
+}
+
+.pricing-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.pricing-note {
+  margin: 2em 0 1em;
+  max-width: 40ch;
+}
+
+.plan {
+  background: #CF943B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2em 2.5em;
+  text-align: center;
+}
+
+.plan-emp {
+  background: #FFD18C;
+}
+
+.plan-title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.plan-cost {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.plan-cost::before {
+  content: '$';
+  font-size: 0.8em;
+}
+
+.plan-item {
+  margin-bottom: 1em;
+}
+
+.plan .divider:nth-of-type(1) {
+  margin-top: 1em;
+}
+
+.plan .divider:nth-of-type(2) {
+  margin-bottom: 2em;
 }
 /*# sourceMappingURL=home.css.map */
