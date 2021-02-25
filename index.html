@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="sass/home.css">
     <link rel="shortcut icon" href="img/fav.svg" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -33,12 +33,14 @@
     <main class="main">
         <div class="main-container container">
             <div class="main-text">
-                <h1 class="main-title">Ferrosys</h1>
-                <p class="main-desc">A Ferro Alloy Management System that aims to simplify functioning, management and
+                <h1 class="main-title" data-aos="fade-right" data-aos-delay="500">Ferrosys</h1>
+                <p class="main-desc" data-aos="fade-right" data-aos-delay="1000">A Ferro Alloy Management System that
+                    aims to simplify functioning, management and
                     reporting.</p>
-                <a href="#features" class="main-btn btn">Learn more</a>
+                <div data-aos="fade-right" data-aos-delay="1500"><a href="#features" class="main-btn">Learn more</a>
+                </div>
             </div>
-            <div class="main-img">
+            <div class="main-img" data-aos="fade-left" data-aos-delay="2000">
                 <img src="img/devices.png" alt="" class="main-hero">
             </div>
         </div>
@@ -48,11 +50,13 @@
 
     <section class="features">
         <div class="features-container container">
-            <h2 class="features-title title">Why choose Ferrosys?</h2>
-            <p class="features-desc">All data is stored locally with web back up, Export reports in CSV/PDF, 24/7
+            <h2 class="features-title title" data-aos="fade-right" data-aos-delay="500">Why choose Ferrosys?</h2>
+            <p class="features-desc" data-aos="fade-right" data-aos-delay="1000">All data is stored locally with web
+                back
+                up, Export reports in CSV/PDF, 24/7
                 Support, Customisable reporting systems, Hands-on training during deployment, Worldwide app access</p>
             <div class="features-grid">
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="1200">
                     <div class="feature-icon">
                         <i class="fas fa-tasks"></i>
                     </div>
@@ -61,7 +65,7 @@
                         <p class="feature-desc">Manage raw material quick and easily.</p>
                     </div>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="1500">
                     <div class="feature-icon">
                         <i class="fas fa-stopwatch"></i>
                     </div>
@@ -70,7 +74,7 @@
                         <p class="feature-desc">Track consumption, operation, production.</p>
                     </div>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="1800">
                     <div class="feature-icon">
                         <i class="fas fa-money-check-alt"></i>
                     </div>
@@ -91,10 +95,10 @@
 
     <section class="modules">
         <div class="modules-container container">
-            <h2 class="modules-title  title">Modules</h2>
+            <h2 class="modules-title  title" data-aos="fade-right" data-aos-delay="500">Modules</h2>
             <div class="modules-grid">
 
-                <div class="module">
+                <div class="module" data-aos="fade-up" data-aos-delay="700">
                     <div class="module-summary" onclick="module(0)">
                         <h3 class="module-title">Production</h3>
                         <i class="fas fa-sort-down"></i>
@@ -106,7 +110,7 @@
 
                 </div>
 
-                <div class="module">
+                <div class="module" data-aos="fade-up" data-aos-delay="900">
                     <div class="module-summary" onclick="module(1)">
                         <h3 class="module-title">Sales</h3>
                         <i class="fas fa-sort-down"></i>
@@ -118,7 +122,7 @@
 
                 </div>
 
-                <div class="module">
+                <div class="module" data-aos="fade-up" data-aos-delay="1100">
                     <div class="module-summary" onclick="module(2)">
                         <h3 class="module-title">Stocks</h3>
                         <i class="fas fa-sort-down"></i>
@@ -130,7 +134,7 @@
 
                 </div>
 
-                <div class="module">
+                <div class="module" data-aos="fade-up" data-aos-delay="1300">
                     <div class="module-summary" onclick="module(3)">
                         <h3 class="module-title">Maintenance</h3>
                         <i class="fas fa-sort-down"></i>
@@ -151,10 +155,10 @@
 
     <section class="features">
         <div class="features-container container">
-            <h2 class="features-title  title">Add-ons</h2>
+            <h2 class="features-title  title" data-aos="fade-right" data-aos-delay="500">Add-ons</h2>
             <div class="features-grid">
 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="1000">
                     <div class="feature-icon">
                         <i class="fas fa-envelope-open-text"></i>
                     </div>
@@ -164,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="1300">
                     <div class="feature-icon">
                         <i class="fas fa-truck"></i>
                     </div>
@@ -174,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="1600">
                     <div class="feature-icon">
                         <i class="fas fa-user"></i>
                     </div>
@@ -195,10 +199,10 @@
 
     <section class="pricing">
         <div class="pricing-container container">
-            <h2 class="pricing-title title">Pricing</h2>
+            <h2 class="pricing-title title" data-aos="fade-right" data-aos-delay="300">Pricing</h2>
             <div class="pricing-grid">
 
-                <div class="plan">
+                <div class="plan" data-aos="fade-up" data-aos-delay="600">
                     <h3 class="plan-title">Basic</h3>
                     <br class="divider">
                     <h4 class="plan-cost">5,499</h4>
@@ -206,7 +210,7 @@
                     <p class="plan-item">All modules<br>(Production, Sales, Stocks, Maintenance, Reports)</p>
                 </div>
 
-                <div class="plan">
+                <div class="plan" data-aos="fade-up" data-aos-delay="900">
                     <h3 class="plan-title">Advanced</h3>
                     <br class="divider">
                     <h4 class="plan-cost">7,499</h4>
@@ -216,7 +220,7 @@
                     <p class="plan-item">E-mail alerts</p>
                 </div>
 
-                <div class="plan plan-emp">
+                <div class="plan plan-emp" data-aos="fade-up" data-aos-delay="1200">
                     <h3 class="plan-title">Pro</h3>
                     <br class="divider">
                     <h4 class="plan-cost">9,499</h4>
@@ -229,7 +233,8 @@
                 </div>
 
             </div>
-            <p class="pricing-note">Note: All plans are subject to 25% yearly maintenance fee with the first year free
+            <p class="pricing-note" data-aos="fade-right" data-aos-delay="1500">Note: All plans are subject to 25%
+                yearly maintenance fee with the first year free
             </p>
         </div>
     </section>
@@ -239,10 +244,10 @@
 
     <section class="contacts">
         <div class="contacts-container container">
-            <h2 class="contacts-title  title">Get in touch</h2>
+            <h2 class="contacts-title  title" data-aos="fade-right" data-aos-delay="300">Get in touch</h2>
             <div class="contacts-grid">
 
-                <div class="contact">
+                <div class="contact" data-aos="fade-up" data-aos-delay="600">
                     <img class="contact-image" src="img/female.jpg" alt="female">
                     <h3 class="contact-title">Shreya Jain</h3>
                     <h4 class="contact-desgn">CEO</h4>
@@ -251,7 +256,7 @@
                     <a href="tel:919764014324" class="contact-phone">+91 9764014324</a>
                 </div>
 
-                <div class="contact">
+                <div class="contact" data-aos="fade-up" data-aos-delay="900">
                     <img class="contact-image" src="img/male.jpg" alt="male">
                     <h3 class="contact-title">Castor Godinho</h3>
                     <h4 class="contact-desgn">CTO</h4>
@@ -267,8 +272,12 @@
 
 
 
-
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

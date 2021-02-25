@@ -446,11 +446,12 @@ br.divider {
 }
 
 .contacts-container {
+  padding: 3em 0;
   min-height: calc( 100vh - 70px);
 }
 
 .contacts-title {
-  margin: 1em 0 1.5em;
+  margin: 0.5em 0 1.5em;
 }
 
 .contacts-grid {
