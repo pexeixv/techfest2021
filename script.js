@@ -29,6 +29,10 @@ window.addEventListener('scroll', () => {
         if (i != n)
             links[i].classList.remove('current');
 
+    if (scroll > anchorsTop[1])
+        document.querySelector('.upArrow').style.right = '30px';
+    else document.querySelector('.upArrow').style.right = '-100px';
+
 })
 
 
