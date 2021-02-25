@@ -189,7 +189,7 @@ br.divider {
 }
 
 .features {
-  padding-bottom: 3em;
+  padding: 1em 0 3em;
   min-height: calc( 100vh - 70px);
 }
 
@@ -205,9 +205,13 @@ br.divider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.features-title {
+  margin: 1em 0;
 }
 
 .features-desc {
@@ -218,6 +222,7 @@ br.divider {
 }
 
 .features-grid {
+  margin-top: 3em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -365,7 +370,7 @@ br.divider {
 }
 
 .pricing-title {
-  margin: 0.5em 0 1em;
+  margin: 1em 0;
 }
 
 .pricing-grid {
@@ -373,7 +378,7 @@ br.divider {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
+  grid-gap: 2em;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
@@ -431,5 +436,85 @@ br.divider {
 
 .plan .divider:nth-of-type(2) {
   margin-bottom: 2em;
+}
+
+.contacts {
+  background: white;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.contacts-container {
+  min-height: calc( 100vh - 70px);
+}
+
+.contacts-title {
+  margin: 1em 0 1.5em;
+}
+
+.contacts-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  justify-items: center;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFBA52;
+  width: 400px;
+}
+
+.contact-image {
+  height: 170px;
+  border-radius: 50%;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 0.7em;
+}
+
+.contact-desgn {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact br {
+  margin: 1em 0;
+}
+
+.contact-email {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+.contact-phone {
+  font-weight: 600;
+}
+
+.contact-phone:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=home.css.map */

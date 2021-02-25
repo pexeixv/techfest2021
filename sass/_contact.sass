@@ -1,0 +1,43 @@
+.contacts
+    background: white
+    height: max-content
+    &-container
+        min-height: calc( 100vh - 70px )
+    &-title
+        margin: 1em 0 1.5em
+    &-grid
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 2em
+        justify-items: center
+
+.contact
+    display: flex
+    padding: 3em 2em
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: $pri
+    width: 400px
+    &-image
+        height: 170px
+        border-radius: 50%
+    &-title
+        text-transform: uppercase
+        font-size: 2rem
+        margin-top: 0.7em
+    &-desgn
+        font-size: 1.5rem
+        font-weight: 600
+    br
+        margin: 1em 0
+    &-email
+        margin-bottom: 1em
+        font-weight: 600
+        &:hover
+            text-decoration: underline
+    &-phone
+        font-weight: 600
+        &:hover
+            text-decoration: underline
+    
