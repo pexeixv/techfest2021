@@ -180,6 +180,7 @@ span.anchor {
 }
 
 .features {
+  padding-bottom: 3em;
   min-height: calc( 100vh - 70px);
 }
 
@@ -341,4 +342,4 @@ span.anchor {
 .module-desc {
   padding: 1.5em 2em;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

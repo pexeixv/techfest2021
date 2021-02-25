@@ -1,4 +1,5 @@
-
+if (document.documentElement.clientWidth < 700)
+    alert('This website is not mobile responsive yet. Please visit back on desktop.');
 
 let links = document.querySelectorAll('.nav-link');
 let anchors = document.querySelectorAll('.anchor');
