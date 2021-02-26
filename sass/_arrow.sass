@@ -1,5 +1,8 @@
 .upArrow
-    transition: all 500ms ease-out 2s
+    &.slideIn
+        right: 30px
+        transition: $trans 500ms
+    transition: $trans
     background: $heading
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3)
     width: 50px
@@ -13,3 +16,4 @@
     right: -100px
     i
         color: white
+    

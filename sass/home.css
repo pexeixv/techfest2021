@@ -520,8 +520,8 @@ br.divider {
 }
 
 .upArrow {
-  -webkit-transition: all 500ms ease-out 2s;
-  transition: all 500ms ease-out 2s;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
   background: #1F1200;
   -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
@@ -534,6 +534,12 @@ br.divider {
   position: fixed;
   bottom: 30px;
   right: -100px;
+}
+
+.upArrow.slideIn {
+  right: 30px;
+  -webkit-transition: all 300ms ease-out 500ms;
+  transition: all 300ms ease-out 500ms;
 }
 
 .upArrow i {

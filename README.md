@@ -1,10 +1,14 @@
-# Single page product website using SASS
+# Single page product website using SASS & AOS
 
+## Preview
+![](resources/preview.png)
+## [Github repo](https://github.com/pexeixv/ferrosys) | [Live website](https://ferrosys.gavinpereira.in/)
+---
 ## TechFest 2021
 ### by Dept of Computer Science, Parvatibai Chowgule College
 ___
 ### Event: Web-designing
-#### Team #9
+#### Team #9: Star Tech
 #### Name: Gavin Pereira
 ---
 ### Problem Statement: You need to showcase a product developed by CtrlSave Pvt Ltd in one single web page. You will find all the details of the product in the attached zip. There are also some screenshots and  mockups available for use.
@@ -17,4 +21,3 @@ ___
 5. Make sure the load time of the webpage is fast. 
 6. Your project directory should be well structured.
 7. You can use images from the internet
-

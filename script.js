@@ -41,8 +41,8 @@ window.addEventListener('scroll', () => {
     // Up arrow slides in
     arrow = document.querySelector('.upArrow');
     if (scroll > anchorsTop[1])
-        arrow.style.right = '30px';
-    else arrow.style.right = '-100px';
+        arrow.classList.add('slideIn');
+    else arrow.classList.remove('slideIn');
 
 })
 
