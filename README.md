@@ -1,7 +1,7 @@
 # Single page product website using SASS & AOS
 
-## Preview
-![](resources/preview.png)
+
+![](img/preview.png)Preview
 ## [Github repo](https://github.com/pexeixv/ferrosys) | [Live website](https://ferrosys.gavinpereira.in/)
 ---
 ## TechFest 2021
