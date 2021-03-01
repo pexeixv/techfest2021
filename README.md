@@ -1,7 +1,4 @@
-# Single page product website using SASS & AOS
-## First runner-up🥈✨
-___
-
+# 🥈✨FIRST RUNNER-UP <br>Single page product website using SASS & AOS
 
 ![](img/preview.png)Preview
 ## [Github repo](https://github.com/pexeixv/ferrosys) | [Live website](https://ferrosys.gavinpereira.in/)
