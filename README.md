@@ -1,4 +1,6 @@
 # Single page product website using SASS & AOS
+## First runner-up🥈✨
+___
 
 
 ![](img/preview.png)Preview
@@ -12,7 +14,7 @@ ___
 #### Name: Gavin Pereira
 ---
 ### Problem Statement: You need to showcase a product developed by CtrlSave Pvt Ltd in one single web page. You will find all the details of the product in the attached zip. There are also some screenshots and  mockups available for use.
-
+---
 ### Rules:
 1. Do not use any server side technology to create the page. 
 2. There should be only one html page. (index)
