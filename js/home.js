@@ -5,7 +5,7 @@ if (document.documentElement.clientWidth < 700)
 let links = document.querySelectorAll('.nav-link');
 let anchors = document.querySelectorAll('.anchor');
 
-let anchorsTop = anchors.map( anchor => achor.offsetTop);
+let anchorsTop = anchors.map( anchor => anchor.offsetTop);
 
 
 
